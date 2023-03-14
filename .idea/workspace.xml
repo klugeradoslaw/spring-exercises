@@ -11,9 +11,11 @@
       <change afterPath="$PROJECT_DIR$/ex01-start/mvnw" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ex01-start/mvnw.cmd" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ex01-start/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex01-start/src/main/java/pl/klugeradoslaw/ex01start/Ex01StartApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex01-start/src/main/java/p/klugeradoslaw/ex01start/Ex01StartApplication.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ex01-start/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex01-start/src/test/java/pl/klugeradoslaw/ex01start/Ex01StartApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex01-start/src/test/java/p/klugeradoslaw/ex01start/Ex01StartApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,10 +39,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "18"
+    "jdk.selected.JAVA_MODULE": "18",
+    "spring.configuration.checksum": "5ab9e0a1a226758e168289d5e03fd60f"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.Ex01StartApplication">
+    <configuration name="Ex01StartApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ex01-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="p.klugeradoslaw.ex01start.Ex01StartApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Ex01StartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ex01-start" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="pl.klugeradoslaw.ex01start.Ex01StartApplication" />
@@ -58,6 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678778418449</updated>
       <workItem from="1678778419626" duration="59000" />
+      <workItem from="1678778798838" duration="37000" />
     </task>
     <servers />
   </component>
