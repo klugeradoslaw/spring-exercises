@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 import pl.klugeradoslaw.ex01start.service.HelloService;
 
 @RestController
-public class HomeController {
+public class HelloController {
 
     @Autowired
     private HelloService helloService;
