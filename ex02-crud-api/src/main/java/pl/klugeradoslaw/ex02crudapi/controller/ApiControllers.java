@@ -1,10 +1,7 @@
 package pl.klugeradoslaw.ex02crudapi.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import pl.klugeradoslaw.ex02crudapi.Repo.UserRepo;
 import pl.klugeradoslaw.ex02crudapi.models.User;
 
@@ -31,8 +28,23 @@ public class ApiControllers {
         userRepo.save(user);
         return "Saved...";
 
-
-
     }
 
+    @PutMapping("/update/{id}")
+    public String updateUser(@PathVariable long id,@RequestBody User user){
+        User updatedUser = userRepo.findById(id).get();
+        updatedUser.setFirstName(user.getFirstName());
+        updatedUser.setLastName(user.getLastName());
+        updatedUser.setOccupation(user.getOccupation());
+        updatedUser.setAge(user.getAge());
+        userRepo.save(updatedUser);
+        return "Updated...";
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public String deletUser(@PathVariable long id) {
+        User deleteUser = userRepo.findById(id).get();
+        userRepo.delete(deleteUser);
+        return "User with id " + id + " deleted.";
+    }
 }
