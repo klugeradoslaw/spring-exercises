@@ -42,7 +42,7 @@ public class ApiControllers {
     }
 
     @DeleteMapping("/delete/{id}")
-    public String deletUser(@PathVariable long id) {
+    public String deleteUser(@PathVariable long id) {
         User deleteUser = userRepo.findById(id).get();
         userRepo.delete(deleteUser);
         return "User with id " + id + " deleted.";
