@@ -22,4 +22,6 @@ public class BodyWeightCalculator {
         return (int)((10 * weight) + (6.25 * height) - (5 * age) + s);
     }
 
+
+
 }
