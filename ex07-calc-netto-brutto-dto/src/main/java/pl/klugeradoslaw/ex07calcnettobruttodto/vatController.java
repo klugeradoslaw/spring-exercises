@@ -17,9 +17,8 @@ public class vatController {
 
     @PostMapping("/calc")
     String calculate(@RequestParam double nettoPrice, @RequestParam String category, Model model) {
-        VatDto vat = calcService.calcVat(nettoPrice, category);
-        model.addAttribute("vat", vat);
-
+        VatDto vatObj = calcService.calcVat(nettoPrice, category);
+        model.addAttribute("vat", vatObj);
         return "result";
     }
 }
