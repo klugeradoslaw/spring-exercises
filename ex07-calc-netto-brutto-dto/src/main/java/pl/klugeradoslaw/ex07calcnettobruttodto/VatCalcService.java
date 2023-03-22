@@ -4,7 +4,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class VatCalcService {
-    double calcVat(double nettoPrice, String category) {
+
+
+    private double calcVatAmount(double nettoPrice, String category) {
         double vatRate = switch (category) {
             case "service" -> 0.23;
             case "food" -> 0.05;
@@ -13,7 +15,10 @@ public class VatCalcService {
         double vat = nettoPrice * vatRate;
         return vat;
     }
-    double calcBruttoPrice(double nettoPrice, String category) {
-        return nettoPrice + calcVat(nettoPrice, category);
+    VatDto calcVat(double nettoPrice, String category) {
+       double vat = calcVatAmount(nettoPrice, category);
+       double bruttoPrice = nettoPrice + vat;
+       return new VatDto(nettoPrice, vat, bruttoPrice);
     }
+
 }

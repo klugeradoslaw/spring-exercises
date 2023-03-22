@@ -6,8 +6,8 @@
 </head>
 <body>
       <h1>Wynik obliczeń</h1>
-      <p th:text="'Kwota netto' + ${nettoPrice}">xD</p>
+      <p th:text="'Kwota netto' + ${vat.nettoPrice}">xD</p>
       <p th:text="'Kwota VAT' + ${vat}"></p>
-      <p th:text="'Kwota brutto' + ${bruttoPrice}"></p>
+      <p th:text="'Kwota brutto' + ${vat.bruttoPrice}"></p>
 </body>
 </html>
