@@ -2,6 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200px, initial-scale=1">
     <title>Student Management System</title>
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -9,10 +10,35 @@
           crossorigin="anonymous">
 </head>
 <body>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">Student Management System</a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/students}">Student List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+        </ul>
+    </div>
+</nav>
     <div class="containter">
-
             <h2> Students List </h2>
-
+            <div class = "col-lg-3">
+                <a th:href = "@{/students/new}" class = "btn btn-primary btn-sm mb-3">Add Student</a>
+            </div>
         <table class="table table-striped table-bordered">
             <thead class="table-dark">
             <tr>
@@ -28,6 +54,10 @@
                 <td th:text="${student.firstName}">y</td>
                 <td th:text="${student.lastName}">y</td>
                 <td th:text="${student.email}">y</td>
+                <td>
+                    <a th:href="@{/students/edit/{id}(id=${student.id})}" class="btn btn-primary">Update</a>
+
+                </td>
             </tr>
             </tbody>
         </table>

@@ -20,4 +20,21 @@ public class StudentServiceImpl implements StudentService {
     public List<Student> getAllStudents() {
         return studentRepository.findAll();
     }
+
+    @Override
+    public Student saveStudent(Student student) {
+        return studentRepository.save(student);
+    }
+
+
+    //Optional??????? .get() niweluje -> do zrozumienia dlaczego
+    @Override
+    public Student getStudentById(Long Id) {
+        return studentRepository.findById(Id).get();
+    }
+
+    @Override
+    public Student editStudent(Student student) {
+        return  studentRepository.save(student);
+    }
 }
