@@ -2,10 +2,7 @@ package pl.klugeradoslaw.ex04studentmanagementsystem.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 import pl.klugeradoslaw.ex04studentmanagementsystem.entity.Student;
 import pl.klugeradoslaw.ex04studentmanagementsystem.service.StudentService;
 
@@ -40,10 +37,19 @@ public class StudentController {
     }
 
     @GetMapping("/students/edit/{id}")
-    public String updateStudent(@PathVariable Long id, Model model) {
+    public String editStudentForm(@PathVariable Long id, Model model) {
         model.addAttribute("student", studentService.getStudentById(id));
         return "edit_student";
     }
 
-
+    @PostMapping("/students/{id}")
+    public String updateStudent(@PathVariable Long id, @ModelAttribute ("student") Student student, Model model) {
+        Student existingStudent = studentService.getStudentById(id);
+        existingStudent.setId(id);
+        existingStudent.setFirstName(student.getFirstName());
+        existingStudent.setLastName(student.getLastName());
+        existingStudent.setEmail(student.getEmail());
+        studentService.updateStudent(existingStudent);
+        return "redirect:/students";
+    }
 }
