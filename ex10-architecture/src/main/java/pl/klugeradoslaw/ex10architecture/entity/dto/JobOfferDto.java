@@ -1,25 +1,22 @@
-package pl.klugeradoslaw.ex10architecture;
+package pl.klugeradoslaw.ex10architecture.entity.dto;
 
-import jakarta.persistence.*;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 
 import java.time.LocalDateTime;
 
-@Entity
-public class JobOffer {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class JobOfferDto {
     private Long id;
     private String title;
     private String description;
+    private String requirements;
     private String duties;
     private String location;
     private Double minSalary;
     private Double maxSalary;
     private LocalDateTime dateAdded;
-    private Integer submissions;
-    @ManyToOne(optional = false)
-    @JoinColumn(name = "company_id")
-    private Company company;
+    private Long companyId;
+    private String companyName;
 
     public Long getId() {
         return id;
@@ -43,6 +40,14 @@ public class JobOffer {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getRequirements() {
+        return requirements;
+    }
+
+    public void setRequirements(String requirements) {
+        this.requirements = requirements;
     }
 
     public String getDuties() {
@@ -85,19 +90,20 @@ public class JobOffer {
         this.dateAdded = dateAdded;
     }
 
-    public Integer getSubmissions() {
-        return submissions;
+    public Long getCompanyId() {
+        return companyId;
     }
 
-    public void setSubmissions(Integer submission) {
-        this.submissions = submission;
+    public void setCompanyId(Long companyId) {
+        this.companyId = companyId;
     }
 
-    public Company getCompany() {
-        return company;
+    public String getCompanyName() {
+        return companyName;
     }
 
-    public void setCompany(Company company) {
-        this.company = company;
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
     }
 }
+

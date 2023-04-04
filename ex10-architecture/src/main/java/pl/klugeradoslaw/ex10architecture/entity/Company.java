@@ -1,4 +1,4 @@
-package pl.klugeradoslaw.ex10architecture;
+package pl.klugeradoslaw.ex10architecture.entity;
 
 import jakarta.persistence.*;
 
