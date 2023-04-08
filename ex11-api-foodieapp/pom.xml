@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>pl.klugeradoslaw</groupId>
-    <artifactId>demo</artifactId>
+    <artifactId>ex11-api-foodieapp</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo</name>
-    <description>demo</description>
+    <name>ex11-api-foodieapp</name>
+    <description>ex11-api-foodieapp</description>
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -35,11 +35,6 @@
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.mysql</groupId>
-            <artifactId>mysql-connector-j</artifactId>
             <scope>runtime</scope>
         </dependency>
         <dependency>

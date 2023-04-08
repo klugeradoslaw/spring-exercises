@@ -1,13 +1,13 @@
-package pl.klugeradoslaw.demo;
+package pl.klugeradoslaw.ex11apifoodieapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication {
+public class Ex11ApiFoodieappApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class, args);
+        SpringApplication.run(Ex11ApiFoodieappApplication.class, args);
     }
 
 }
