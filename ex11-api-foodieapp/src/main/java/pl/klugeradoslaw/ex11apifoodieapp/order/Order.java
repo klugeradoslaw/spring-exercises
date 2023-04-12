@@ -6,6 +6,8 @@ import pl.klugeradoslaw.ex11apifoodieapp.item.Item;
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
+@Table(name = "client_order")
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
