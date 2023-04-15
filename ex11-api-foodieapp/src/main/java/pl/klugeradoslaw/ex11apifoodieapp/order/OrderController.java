@@ -39,7 +39,7 @@ public class OrderController {
     @GetMapping("/zamowienie")
     public String getCurrentOrder(Model model) {
         model.addAttribute("order", clientOrder.getOrder());
-        model.addAttribute("sun", clientOrder
+        model.addAttribute("sum", clientOrder
                 .getOrder()
                 .getItems().stream()
                 .mapToDouble(Item::getPrice)
@@ -54,7 +54,7 @@ public class OrderController {
         order.setTelephone(telephone);
         orderRepository.save(order);
         clientOrder.clear();
-        model.addAttribute("message", new Message("Dziękuemy", "Zamówieinie przekazane do realizacji"));
+        model.addAttribute("message", new Message("Dziękujkemy", "Zamówienie przekazane do realizacji"));
         return "message";
     }
 }
