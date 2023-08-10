@@ -5,16 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1bcfe43-754f-4b65-a20a-ef688fe7287c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ex01-start/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex01-start/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex01-start/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex01-start/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex01-start/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex01-start/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex01-start/src/main/java/p/klugeradoslaw/ex01start/Ex01StartApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex01-start/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex01-start/src/test/java/p/klugeradoslaw/ex01start/Ex01StartApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ex01-start" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,6 +30,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "18",
+    "node.js.selected.package.tslint": "(autodetect)",
     "spring.configuration.checksum": "5ab9e0a1a226758e168289d5e03fd60f"
   }
 }]]></component>
